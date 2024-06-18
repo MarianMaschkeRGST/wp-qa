@@ -25,7 +25,6 @@ wp_register_script('qa', get_template_directory_uri() . '/js/qa.js', array(), fa
 
 if(is_page("対応ページ名"))
     wp_enqueue_script('qa');
-
 ```
 
 ### 3. component-qa.php
@@ -35,7 +34,6 @@ if(is_page("対応ページ名"))
 
 ```
 <?php get_template_part('includes/component','qa') ;?>
-
 ```
 
 ### 4. CPT の設定
