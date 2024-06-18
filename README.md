@@ -9,6 +9,11 @@
 - qa.scss を/src のフォルダーに追加
 - functions.php で qa の CSS ファイル+対応のページを登録する
 
+### 1.1 画像
+
+- /img にある SVG をコピーしてください
+- path が変わったら qa.scss で background-image の url を一緒に変更してください。
+
 ### 2. script の登録
 
 -qa.js を/js のフォルダーに追加
