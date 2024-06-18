@@ -8,6 +8,15 @@
 
 - qa.scss を/src のフォルダーに追加
 - functions.php で qa の CSS ファイル+対応のページを登録する
+  - $stylesheets の追加とページの if
+  - ページ一枚あたり複数のスタイルは以下の形：
+
+```
+    if(is_page("対応ページ名")) {
+        wp_enqueue_style('対応スタイル１');
+        wp_enqueue_style('対応スタイル２');
+    }
+```
 
 ### 1.1 画像
 
@@ -16,7 +25,7 @@
 
 ### 2. script の登録
 
--qa.js を/js のフォルダーに追加
+-　 qa.js を/js のフォルダーに追加
 
 - functions.php の function load_js() {...} に qa.js を登録。以下の行を追加してください：
 
